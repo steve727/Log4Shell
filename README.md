@@ -24,3 +24,5 @@ Also, better pipe the logs through an URL decoder before running the regex
 - Disable JNDI lookup.
 - Remove the JndiLookup file in the log4j-core and restart the service.
 - Setup spring.jndi.ignore=true
+
+https://unit42.paloaltonetworks.com/apache-log4j-vulnerability-cve-2021-44228/
