@@ -14,3 +14,8 @@ I know that using regex is dumb and shit, but it's just first-line defense. This
 ```shell
 \${(\${(.*?:|.*?:.*?:-)('|"|`)*(?1)}*|[jndi:(ldap|rm)]('|"|`)*}*){9,10}
 ```
+Added support for LDAPS:
+```shell
+\${(\${(.*?:|.*?:.*?:-)('|"|`)*(?1)}*|[jndi:lapsrm]('|"|`)*}*){9,11}
+```
+Also, better pipe the logs through an URL decoder before running the regex
