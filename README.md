@@ -19,3 +19,8 @@ Added support for LDAPS:
 \${(\${(.*?:|.*?:.*?:-)('|"|`)*(?1)}*|[jndi:lapsrm]('|"|`)*}*){9,11}
 ```
 Also, better pipe the logs through an URL decoder before running the regex
+
+- Disable suspicious outbound traffic, such as LDAP and RMI on the server in PANW Firewall.
+- Disable JNDI lookup.
+- Remove the JndiLookup file in the log4j-core and restart the service.
+- Setup spring.jndi.ignore=true
